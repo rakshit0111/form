@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1 id="title">SURVEY FORM</h1>
+    <p id="description">I care about your choices :)</p>
+    <form id="survey-form" method="post" action="https://register-demo.freecodecamp.org">
+      <fieldset>
+        <label id="name-label" for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="John Doe" required/>
+      </fieldset>
+      <fieldset>
+        <label id="email-label" for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="johndoe123@gmail.com" required/>
+      </fieldset>
+      <fieldset>
+        <label id="number-label" for="number">Number:</label>
+        <input type="number" id="number" name="number" required min="10" max="100000000" placeholder="91XXXXXXX"/>
+      </fieldset>
+      <fieldset>
+        <legend>Favourite Animal</legend>
+        <label for="dropdown">
+          <select id="dropdown" name="favorite-animal">
+            <option value="">Select One</option>
+            <option value="1">Cats</option>
+            <option value="2">Dogs</option>
+            <option value="3">Pandas</option>
+            <option value="4">Parrots</option>
+            <option value="5">Foxes</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Favourite Sport</legend>
+        <label for="cricket"><input type="radio" name="favorite-sport" id="cricket" value="cricket"> Cricket</label>
+        <label for="football"><input type="radio" name="favorite-sport" id="football" value="football"/> Football</label>
+        <label for="basketball"><input type="radio" name="favorite-sport" id="basketball" value="basketball"/> Basketball</label>
+      </fieldset>
+      <fieldset>
+        <legend>Languages You Know</legend>
+        <label for="java"><input type="checkbox" value="java" id="java" name="lang"/> Java</label>
+        <label for="c"><input type="checkbox" value="c" name="lang" id="c"/> C</label>
+        <label for="python"><input type="checkbox" value="python" name="lang" id="python"/> Python</label>
+        <label for="javascript"><input type="checkbox" value="javascript" name="lang" id="javascript"/> JavaScript</label>
+      </fieldset>
+      <fieldset>
+        <label>Anything about yourself:<textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like playing Fortnite on Friday nights..."></textarea></label>
+      </fieldset>
+      <fieldset>
+        <input type="submit" id="submit" value="Submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
